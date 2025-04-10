@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="banner">
+        <div class="logo-container">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh_AX1NGG6JRhl5AYFAD6UDCXpcEsMhI9kDXdYlxcJVSqeTmpPiWUOo-EqwY0BwkQa_WS9zc0yowvLC7q30JS19hH-iGa6cWTfdRjY2nSm49sXOD0gjzluji7BVRmmumhQoQhFuizQ0eZmu/s1600/LOGO+GALETTO+APROVADA+copy.jpg" alt="Logo do Restaurante" class="logo">
+        </div>
+        <h1>Cardápio Digital</h1>
+        <nav>
+            <ul>
+                <li><a href="#pratos">Pratos</a></li>
+                <li><a href="#bebidas">Bebidas</a></li>
+                <li><a href="#sobremesas">Sobremesas</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section id="pratos" class="menu-section">
+            <h2>Pratos Principais</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://p2.trrsf.com/image/fget/cf/800/450/middle/images.terra.com/2020/12/10/galeto-assado-molho-especial.jpg" alt="Galetto Tradicional">
+                    <h3>Galetto Tradicional</h3>
+                    <p class="description">Galetto assado com temperos especiais</p>
+                    <p class="price">R$ 45,90</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://static.itdg.com.br/images/640-440/c2212c13414707d740bd216fa66fde5a/shutterstock-2217001709-1-.jpg" 
+                         alt="Costelinha com Barbecue" 
+                         class="product-card img">
+                    <h3>Costelinha com Barbecue</h3>
+                    <p class="description">Costelinha suína ao molho barbecue</p>
+                    <p class="price">R$ 52,90</p>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://static.itdg.com.br/images/1200-630/70207330cd93d8a78ba48e74c7100f11/peito-de-frango-na-airfryer.jpg" 
+                         alt="Filé de Frango" 
+                         class="product-card img">
+                    <h3>Filé de Frango</h3>
+                    <p class="description">Filé de frango grelhado com arroz e legumes</p>
+                    <p class="price">R$ 39,90</p>
+                    <button class="buy-btn" onclick="addToCart('Filé de Frango', 39.90)">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://receitasgalo.com.br/images/receitas/89/galo-imagem-receitas-macarrao-com-frango-share.jpg" 
+                         alt="Galeto com Espaguete" 
+                         class="product-card img">
+                    <h3>Galeto com Espaguete</h3>
+                    <p class="description">Galeto assado com espaguete ao alho e óleo</p>
+                    <p class="price">R$ 48,90</p>
+                    <button class="buy-btn" onclick="addToCart('Galeto com Espaguete', 48.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="bebidas" class="menu-section">
+            <h2>Bebidas</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://www.vinhosevinhos.com/media/catalog/product/cache/c8e66dd5faf70e9cdccb3beaafc83347/d/o/domans-1931-blend.jpg" 
+                         alt="Vinho Tinto" 
+                         class="product-card img">
+                    <h3>Vinho Tinto</h3>
+                    <p class="description">Vinho tinto seco 750ml</p>
+                    <p class="price">R$ 89,90</p>
+                    <button class="buy-btn" onclick="addToCart('Vinho Tinto', 89.90)">Adicionar ao Carrinho</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://www.imigrantesbebidas.com.br/bebida/images/products/full/1984-refrigerante-coca-cola-lata-350ml.jpg" 
+                         alt="Coca-Cola" 
+                         class="product-card img">
+                    <h3>Coca-Cola</h3>
+                    <p class="description">Refrigerante Coca-Cola Lata 350ml</p>
+                    <p class="price">R$ 5,90</p>
+                    <button class="buy-btn" onclick="addToCart('Coca-Cola', 5.90)">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://trimais.vteximg.com.br/arquivos/ids/1027195-1000-1000/foto_original.jpg?v=637665383669970000" 
+                         alt="Água Mineral" 
+                         class="product-card img">
+                    <h3>Água Mineral</h3>
+                    <p class="description">Água Mineral sem gás 500ml</p>
+                    <p class="price">R$ 3,50</p>
+                    <button class="buy-btn" onclick="addToCart('Água Mineral', 3.50)">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://lucianaspina.com.br/wp-content/uploads/2022/03/Qual-suco-de-fruta-emagrece.jpg" 
+                         alt="Suco de Frutas" 
+                         class="product-card img">
+                    <h3>Suco de Frutas</h3>
+                    <p class="description">Suco natural de frutas variadas 300ml</p>
+                    <p class="price">R$ 8,90</p>
+                    <button class="buy-btn" onclick="addToCart('Suco de Frutas', 8.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobremesas" class="menu-section">
+            <h2>Sobremesas</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://phygital-files.mercafacil.com/good-bom/uploads/produto/pudim_de_leite_condensado_g_b_kg_b3ea3118-34db-4631-89df-ef9597d3559f.jpeg" 
+                         alt="Pudim" 
+                         class="dessert-image">
+                    <h3>Pudim</h3>
+                    <p class="description">Pudim de leite condensado</p>
+                    <p class="price">R$ 12,90</p>
+                    <button class="buy-btn" onclick="addToCart('Pudim', 12.90)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Conteúdo do footer -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
