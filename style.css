@@ -72,9 +72,8 @@ h1 {
     top: 0;
     width: 300px;
     height: 100vh;
-    margin-top: 20px;
     padding: 20px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(146, 146, 146, 0.1);
     overflow-y: auto;
